@@ -36,20 +36,20 @@ Round 3 gave every build a simulated client with private notes (brand colors, pr
 
 Rounds 1 and 2 (36 builds, briefs without a client) found every design skill about 2 points above defaults, with 0.2 ahead on measurable defects: 0 contrast failures against 6 of 9 for 0.1.
 
-The method, every score, the integrity notes, the limits and a script to rerun it are in [`benchmark/`](benchmark/). Judge for yourself in the blind galleries for [round 4](https://epistex0.github.io/web-ui-design-skill/benchmark/results/round-4/gallery/), [round 3](https://epistex0.github.io/web-ui-design-skill/benchmark/results/round-3/gallery/) and [round 2](https://epistex0.github.io/web-ui-design-skill/benchmark/results/gallery/).
+The method, every score, the integrity notes, the limits and a script to rerun it are in [`benchmark/`](benchmark/). Judge for yourself in the blind galleries for [round 4](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/round-4/gallery/), [round 3](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/round-3/gallery/) and [round 2](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/gallery/).
 
 ## Install
 
 With the [skills CLI](https://skills.sh) (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills@latest add EPISTEX0/web-ui-design-skill
+npx skills@latest add epistex-dev/web-ui-design-skill
 ```
 
 As a Claude Code plugin:
 
 ```
-/plugin marketplace add EPISTEX0/web-ui-design-skill
+/plugin marketplace add epistex-dev/web-ui-design-skill
 /plugin install web-ui-design@web-ui-design
 ```
 
