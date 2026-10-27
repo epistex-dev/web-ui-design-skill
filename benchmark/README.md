@@ -86,7 +86,7 @@ All 3 wired harbour-swim builds fixed the 12 planted defects and kept the brand.
 - One simulated client that answers readily, as in round 3. Judges score against the notes, so a build that follows a client reply the notes do not contain can lose fit.
 - Screenshots stop at 6,000 px, which cut the mobile capture of 17 of the 36 pages. Defects further down were invisible to the judges.
 - One author wrote the three briefs, and the notes again hold facts that only asking can reach. The fit criterion therefore rewards asking. The silent arm is the floor.
-- Judges are models. Vote in the [round-4 blind gallery](https://epistex0.github.io/web-ui-design-skill/benchmark/results/round-4/gallery/).
+- Judges are models. Vote in the [round-4 blind gallery](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/round-4/gallery/).
 
 The full tables, per judge, are in [`results/round-4/summary.md`](results/round-4/summary.md), and every build, score and judge note is in [`results/round-4/summary.json`](results/round-4/summary.json).
 
@@ -198,7 +198,7 @@ The skill triggered in all 9 skill builds. Every skill build fixed all 12 defect
 - 3 builds per arm per brief. The New result (9 against 9) is significant. Extend and Improve are 3 against 3 each, where no result can reach p < 0.10.
 - One simulated client, Sonnet 5.5, that answers readily. Real users answer slower, partly, or not at all. The declining arm is the floor.
 - The fit criterion rewards facts only the notes hold, which favors any arm that asks. That is the point of the question round, but it also makes round-3 scores incomparable with rounds 1 and 2.
-- Judges are models. Vote in the [round-3 blind gallery](https://epistex0.github.io/web-ui-design-skill/benchmark/results/round-3/gallery/).
+- Judges are models. Vote in the [round-3 blind gallery](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/round-3/gallery/).
 
 The full tables, per judge, are in [`results/round-3/summary.md`](results/round-3/summary.md), and every build, score and judge note is in [`results/round-3/summary.json`](results/round-3/summary.json).
 
@@ -306,7 +306,7 @@ Cost per build rose 6%, to $0.34. The median build took 16 seconds longer.
 
 - 9 builds per arm. The skills-vs-defaults gap is significant. Gaps between the skills are not.
 - One builder model, Sonnet 5.5. Results may differ on Opus or other agents.
-- Judges are models, not people. Vote in the [blind gallery](https://epistex0.github.io/web-ui-design-skill/benchmark/results/gallery/) and open an issue with your picks.
+- Judges are models, not people. Vote in the [blind gallery](https://epistex-dev.github.io/web-ui-design-skill/benchmark/results/gallery/) and open an issue with your picks.
 - Single-file static pages only. Real projects have existing code, components and a `DESIGN.md`, which rounds 1 and 2 do not cover. Round 3 does.
 - The skill's author ran the benchmark and wrote 0.2 after seeing round-1 judge notes. 0.2 was then tested on the same three briefs, so it may fit them better than briefs it has not seen. Round 3, above, uses new briefs.
 
