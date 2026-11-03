@@ -5,7 +5,7 @@ description: "Designs and builds web UI that looks deliberate, not generated, in
 
 # Web UI design
 
-The look comes from the process, not from a rule list. Name the case first, then run that case's steps. New, Extend and Improve share the contract, the question round, the render loop and the record below. Review and Small edit skip the question round and the `DESIGN.md` record. Choices come from [reference/patterns.md](reference/patterns.md), and [reference/rules.md](reference/rules.md) applies to everything you build or judge.
+The look comes from the process, not from a rule list. Name the case first, then run that case's steps. New, Extend and Improve share the contract, the question round, the render loop and the record below. Review and Small edit skip the question round and the `DESIGN.md` record. Choices come from [reference/patterns.md](reference/patterns.md), and [reference/rules.md](reference/rules.md) applies to everything you build or judge. A chart, sparkline or data table also follows [reference/charts.md](reference/charts.md).
 
 ## 1. Name the case
 
