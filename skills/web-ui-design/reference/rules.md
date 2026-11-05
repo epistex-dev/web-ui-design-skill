@@ -68,7 +68,8 @@ These are defaults that read as generated because they appear whatever the subje
 ## States and interaction
 
 - Every control has hover, `:focus-visible`, active and disabled states. The focus ring is visible with 3:1 contrast.
-- Every async view has loading (skeleton matching the final layout), empty (with the next action) and error (what happened and how to fix it) states.
+- A control unavailable for now (missing input, no permission) uses `aria-disabled="true"` with the reason in visible text or `aria-describedby`, and its handler ignores activation, so it keeps focus and is announced. Native `disabled` is for a control that is sending.
+- Every async view has loading (skeleton matching the final layout), empty (with the next action) and error ([Copy](#copy)) states.
 - Use native elements or accessible primitives (Radix, Base UI, React Aria) and the project's existing components.
 - Hit areas are at least 24px, and 44px on touch. Extend small controls with a pseudo-element.
 - Every input has a visible label. Icon-only buttons have an accessible name. Images have `alt`.
@@ -78,7 +79,8 @@ These are defaults that read as generated because they appear whatever the subje
 
 - Every action shows a response within 100ms: a pressed state, then a pending state for anything slower.
 - Apply reversible changes at once and offer undo. Confirm first only when the action cannot be undone, and name the consequence in the confirm button ("Delete 3 invoices").
-- Use a skeleton when the layout is known and a spinner only for short waits inside a control.
+- Pick the loader by expected wait: under 100ms none; 100ms to 1s a light inline indicator; over 1s a skeleton matching the layout, or a progress bar when progress is known. A spinner appears only after 200ms and, once shown, stays at least 300ms so it does not flash.
+- Never open a modal from a modal. Pick the surface by the task: one field edits in place; a short task goes in a slide-over; a task of 10 seconds or more gets its own page.
 - Forms validate a field when it loses focus, show the error next to it, keep everything typed, and move focus to the first error on submit.
 - Success confirms in place, next to what changed. A toast is for results that happen elsewhere.
 - Back returns to the same filters and scroll position. State worth sharing (filters, tabs, selection) lives in the URL.
@@ -106,8 +108,10 @@ These are defaults that read as generated because they appear whatever the subje
 
 - Name things by what the user manages, not how the system works.
 - A button names its action ("Save changes"), and the result keeps the name ("Saved").
-- Errors state what happened and the fix, without apology.
+- Errors state what happened, why, and the fix, without apology ("Payment declined. Your bank refused the card. Try another card or contact your bank.").
 - Empty states invite the next action.
+
+Thresholds in Feedback and States from VectorLab UI/UX Skills and Nickture (CC BY 4.0); error structure from Anthropic's ux-copy skill.
 
 ## Stress test
 
